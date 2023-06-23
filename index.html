@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Listing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <!---mobile navigation menu -->
+            <div class="mobile__nav">
+                <div class="mobile__nav-content">
+                    <button class="mobile__menu-btn">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <h2>Rikka Homes</h2>
+                    <button>
+                        <i class='bx bx-search-alt-2'></i>
+                    </button>
+                    <button>
+                        <i class='bx bxs-user'></i>
+                    </button>
+                </div>
+                <ul class="mobile__nav-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="mobile__dropdown">Properties
+                        <i class='bx bx-chevron-down'></i>
+                        <div class="mobile__dropdown-menu">
+                            <a href="">Login</a>
+                            <a href="">Register</a>
+                            <a href="">My Profile</a>
+                            <a href="pages/faq.html">Faq</a>        
+                        </div>
+                    </li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--- desktop navigation menu--->
+            <div class="main__nav">
+                <div class="main__nav-content">
+                    <h2>Rikka Homes</h2>
+                    <ul class="main__nav-link">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li class="main__dropdown">Properties
+                            <i class='bx bx-chevron-down'></i> 
+                            <div class="main__dropdown-menu">
+                                <a href="">Login</a>
+                                <a href="">Register</a>
+                                <a href="">My Profile</a>   
+                                <a href="pages/faq.html">Faq</a>     
+                            </div>
+                        </li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                        <li><a href="#">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="main__nav-skewed">
+                    <i class='bx bxs-phone'></i>
+                    <p>0915000000</p>
+                </div>
+            </div>    
+        </nav>
+        <!---- header carousel --->
+        <section class="carousel">
+                <ul class="carousel__contents">
+                    <li class="carousel__slide is-active">
+                        <img src="./assets/home1.jpg" alt="home1-apartment">
+                        <div class="carousel__slide-description">
+                            <div class="carousel__slide-info">
+                                <h2>Apartment 200CA Flat</h2>
+                                <p class="property-price">$ 2000  
+                                    <span class="highlight"> / month</span>  
+                                    <span class="rent-banner">For Rent</span>  
+                                </p>
+                                <p>
+                                    <span><i class='bx bx-map'></i></span>
+                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                </p>
+                            </div>
+                            <div class="carousel__slide-details">
+                                <div class="property__details">
+                                    <i class='bx bx-area'></i>
+                                    <div class="property__content-info">
+                                        <p>500 SqFt</p>
+                                        <p>Size</p>
+                                    </div>    
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-bed'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bedrooms</p>
+                                    </div>
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-shower'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <img src="./assets/home2.jpg" alt="home2-apartment">
+                        <div class="carousel__slide-description">
+                            <div class="carousel__slide-info">
+                                <h2>Apartment 200CA Flat</h2>
+                                <p class="property-price">$ 2000  
+                                    <span class="highlight"> / month</span>  
+                                    <span class="rent-banner">For Rent</span>  
+                                </p>
+                                <p>
+                                    <span><i class='bx bx-map'></i></span>
+                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                </p>
+                            </div>
+                            <div class="carousel__slide-details">
+                                <div class="property__details">
+                                    <i class='bx bx-area'></i>
+                                    <div class="property__content-info">
+                                        <p>500 SqFt</p>
+                                        <p>Size</p>
+                                    </div>    
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-bed'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bedrooms</p>
+                                    </div>
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-shower'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <img src="./assets/interior1.jpg" alt="interior-home">
+                        <div class="carousel__slide-description">
+                            <div class="carousel__slide-info">
+                                <h2>Apartment 200CA Flat</h2>
+                                <p class="property-price">$ 2000  
+                                    <span class="highlight"> / month</span>  
+                                    <span class="rent-banner">For Rent</span>  
+                                </p>
+                                <p>
+                                    <span><i class='bx bx-map'></i></span>
+                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                </p>
+                            </div>
+                            <div class="carousel__slide-details">
+                                <div class="property__details">
+                                    <i class='bx bx-area'></i>
+                                    <div class="property__content-info">
+                                        <p>500 SqFt</p>
+                                        <p>Size</p>
+                                    </div>    
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-bed'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bedrooms</p>
+                                    </div>
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-shower'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            
+            <div class="carousel__btns">
+                <button class="previous-btn">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <button class="next-btn"><i class='bx bx-chevron-right'></i></button>
+            </div>
+            
+            <div class="carousel__dots"></div>
+
+        </section>
+    </header>
+    <script src="./JS/app.js"></script>
+    
+</body>
+</html>
