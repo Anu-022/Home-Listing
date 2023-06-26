@@ -17,7 +17,9 @@
                     <button class="mobile__menu-btn">
                         <i class='bx bx-menu'></i>
                     </button>
-                    <h2>Rikka Homes</h2>
+                    <h2>
+                        <span class="highlight">Rikka</span>Homes
+                    </h2>
                     <button>
                         <i class='bx bx-search-alt-2'></i>
                     </button>
@@ -34,7 +36,7 @@
                             <a href="">Login</a>
                             <a href="">Register</a>
                             <a href="">My Profile</a>
-                            <a href="pages/faq.html">Faq</a>        
+                            <a href="pages/faq.html">Faqs</a>        
                         </div>
                     </li>
                     <li><a href="./pages/contact.html">Contact</a></li>
@@ -43,31 +45,33 @@
             <!--- desktop navigation menu--->
             <div class="main__nav">
                 <div class="main__nav-content">
-                    <h2>Rikka Homes</h2>
+                    <h2>
+                        <span class="highlight">Rikka</span> Homes</h2>
                     <ul class="main__nav-link">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./pages/about.html">About</a></li>
-                        <li class="main__dropdown">Properties
+                        <li class="nav-rule"><a href="#">Home</a></li>
+                        <li class="nav-rule"><a href="./pages/about.html">About</a></li>
+                        <li class="main__dropdown nav-rule">Properties
                             <i class='bx bx-chevron-down'></i> 
                             <div class="main__dropdown-menu">
-                                <a href="">Login</a>
-                                <a href="">Register</a>
-                                <a href="">My Profile</a>   
-                                <a href="pages/faq.html">Faq</a>     
+                                <div class="bubble">
+                                    <a href="">Gallery</a>
+                                    <a href="">Agents</a>   
+                                    <a href="pages/faq.html">Faqs</a>  
+                                </div>   
                             </div>
                         </li>
-                        <li><a href="./pages/contact.html">Contact</a></li>
-                        <li><a href="#">My Account</a></li>
+                        <li class="nav-rule"><a href="./pages/contact.html">Contact</a></li>
+                        <li class="nav-rule"><a href="#">My Account</a></li>
                     </ul>
                 </div>
                 <div class="main__nav-skewed">
-                    <i class='bx bxs-phone'></i>
+                    <i class='bx bxs-phone bx-flip-horizontal bx-lg'></i>
                     <p>0915000000</p>
                 </div>
             </div>    
         </nav>
         <!---- header carousel --->
-        <section class="carousel">
+            <section class="carousel">
                 <ul class="carousel__contents">
                     <li class="carousel__slide is-active">
                         <img src="./assets/home1.jpg" alt="home1-apartment">
@@ -85,7 +89,7 @@
                             </div>
                             <div class="carousel__slide-details">
                                 <div class="property__details">
-                                    <i class='bx bx-area'></i>
+                                    <i class='bx bx-area box-md'></i>
                                     <div class="property__content-info">
                                         <p>500 SqFt</p>
                                         <p>Size</p>
@@ -110,6 +114,45 @@
                     </li>
                     <li class="carousel__slide">
                         <img src="./assets/home2.jpg" alt="home2-apartment">
+                        <div class="carousel__slide-description">
+                            <div class="carousel__slide-info">
+                                <h2>Apartment 200CA Flat</h2>
+                                <p class="property-price">$ 2000  
+                                    <span class="highlight"> / month</span>  
+                                    <span class="rent-banner">For Rent</span>  
+                                </p>
+                                <p>
+                                    <span><i class='bx bx-map'></i></span>
+                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                </p>
+                            </div>
+                            <div class="carousel__slide-details">
+                                <div class="property__details">
+                                    <i class='bx bx-area bx-md'></i>
+                                    <div class="property__content-info">
+                                        <p>500 SqFt</p>
+                                        <p>Size</p>
+                                    </div>    
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-bed bx-md'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bedrooms</p>
+                                    </div>
+                                </div>
+                                <div class="property__details">
+                                    <i class='bx bx-shower bx-md'></i>
+                                    <div class="property__content-info">
+                                        <p>2</p>
+                                        <p>Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <img src="./assets/home3.JPG" alt="interior-home">
                         <div class="carousel__slide-description">
                             <div class="carousel__slide-info">
                                 <h2>Apartment 200CA Flat</h2>
@@ -187,18 +230,233 @@
                         </div>
                     </li>
                 </ul>
-            
-            <div class="carousel__btns">
-                <button class="previous-btn">
-                    <i class='bx bx-chevron-left'></i>
-                </button>
-                <button class="next-btn"><i class='bx bx-chevron-right'></i></button>
-            </div>
-            
-            <div class="carousel__dots"></div>
-
+                <div class="carousel__btns">
+                    <button class="previous-btn">
+                        <i class='bx bx-chevron-left'></i>  
+                    </button>
+                    <button class="next-btn">
+                        <i class='bx bx-chevron-right'></i>  
+                    </button>
+                </div>
         </section>
     </header>
+
+    <!--- homepage form section-->
+    <main>
+        <div class="homepage__search">
+            <div class="discover">
+                <p>Discover Your</p>
+                <h1>
+                    <span class="highlight">D</span>REAM
+                <br><span class="highlight">H</span>OUSE</br>
+                </h1>
+            </div>
+            <div class="homepage_search-form">
+                <div class="homepage_search-filter">
+                    <button class="rent-filter active">For Rent</button>
+                    <button class="sale-filter">For Sale</button>
+                </div>
+                <div class="homepage_form-details">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="all">All Types</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="land">Land</option>
+                            <option value="duplex">Duplex</option>
+                        </select>
+                        <input type="text" placeholder="Title" class="spacing">
+                        <input type="text" placeholder="Address" class="spacing">
+                        <select name="" id="">
+                            <option value="Any Bedrooms">Any Bedrooms</option>
+                            <option value="house">1</option>
+                            <option value="apartment">2</option>
+                            <option value="land">3</option>
+                            <option value="duplex">4</option>
+                            <option value="duplex">5</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="Any Bathrooms">Any Bathrooms</option>
+                            <option value="house">1</option>
+                            <option value="apartment">2</option>
+                            <option value="land">2</option>
+                            <option value="duplex">4</option>
+                            <option value="duplex">5</option>
+                        </select>
+                        <select name="" id="" class="price-input min-price">
+                            <option value="min-price">Min Price</option>
+                            <option value="house">$100</option>
+                            <option value="apartment">$300</option>
+                            <option value="land">$600</option>
+                            <option value="duplex">$800</option>
+                            <option value="duplex">$1,000</option>
+                        </select>
+                        <select name="" id="" class="price-input">
+                            <option value="max-price">Max-Price</option>
+                            <option value="house">$1,000</option>
+                            <option value="apartment">$1,500</option>
+                            <option value="land">$2,000</option>
+                            <option value="duplex">$4,000</option>
+                            <option value="duplex">$10,000</option>
+                        </select>
+                        <div class="range-input">
+                            <label for="size">
+                                Size[0 -100] SqFt
+                            </label>
+                            <input type="range">
+                        </div>
+                        <div class="range-input">
+                            <label for="size">
+                                Land Area[0 - 1000] SqFt
+                            </label>
+                            <input type="range">
+                        </div>
+                        <input type="text" placeholder="Property ID">
+                        <button class="filter-submit-btn" type="submit">
+                            <i class='bx bx-search-alt-2 bx-md'></i>
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="explore">
+        <p>Find Property in your city</p>
+        <h1 class="center-rule">EXPLORE PROPERTY</h1>
+        <div class="explore__property">
+            <div class="explore__images">
+                 <img src="./assets/home2.jpg" alt="home2">
+                 <div class="explore__image-desc">
+                     <h2>Apartment</h2>
+                     <p><span class="highlight">20</span>
+                        Properties</p>
+                    </div> 
+            </div>
+            <div class="explore__images-grid">
+                <div class="img-grid1">
+                    <img src="./assets/home3.JPG" alt="">
+                    <div class="explore__image-desc">
+                        <h2>Flats</h2>
+                     <p><span class="highlight">120</span>
+                        Properties</p>
+                    </div>
+                </div>
+                <div class="img-grid2">
+                    <img src="./assets/home1.jpg" alt="">
+                    <div class="explore__image-desc">
+                        <h2>Duplex</h2>
+                        <p><span class="highlight">80</span>
+                        Properties</p>
+                    </div> 
+                </div>        
+            </div>
+                
+        </div>
+    </section>
+    <!-----------footer------>
+    <footer>
+        <section class="footer__form">
+            <div class="newsletter">
+                    <h2>OUR
+                            <br>NEWSLETTER
+                    </h2>
+            </div>
+            <div class="newsletter__form">
+                <form action="">
+                    <div class="newsletter__input">
+                        <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS">
+                        <button><i class='bx bx-paper-plane bx-md'></i></button>
+                    </div>   
+                </form>       
+           </section>
+           <section class="footer__info">
+                <div class="footer__details">
+                    <h2>
+                        <span class="highlight">Rikka</span>
+                         Homes
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga esse ipsam amet quibusdam omnis quae magni, Illum ipsam eaque doloremque</p>
+                    <ul class="footer__social-icons">
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-facebook'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-twitter'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-instagram'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-linkedin'></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class='bx bxl-skype'></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__link-contact">
+                        <h2>Get in touch</h2>
+                        <p>
+                            <span><i class='bx bx-map highlight'></i></span>
+                            Plot 900, Room 5 Jericho Malls, Jobi Apartment Towers,
+                            Garki Abuja Nigeria.
+                        </p>
+                        <p>
+                            <span><i class='bx bxs-phone highlight'></i></span>
+                            (+234) 90000000
+                        </p>
+                        <p>
+                            <span><i class='bx bx-envelop highlight'></i></span>
+                            info@rikkahomes.com
+                        </p>
+                        <p>
+                            <span><i class='bx bx-globe highlight'></i></span>
+                            www.rikkahomes.com
+                        </p>
+                        <p>
+                            <span><i class='bx bxl-facebook highlight'></i></span>
+                            @rikka_estates</p>
+                    </div>
+                    
+                    <div class="footer__cities">
+                        <h2>Property Cites</h2>
+                        <ul>
+                            <li><span>
+                                   <i class='bx bxs-right-arrow highlight'></i>
+                                </span>
+                                Lagos
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bxs-right-arrow highlight'></i>
+                                 </span>
+                                Abuja
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bxs-right-arrow highlight'></i>
+                                 </span>
+                                Portharcourt
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bxs-right-arrow highlight'></i>
+                                 </span> 
+                                Kano
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bxs-right-arrow highlight'></i>
+                                 </span>
+                                Ogun
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </section>
+      </footer>
     <script src="./JS/app.js"></script>
     
 </body>
