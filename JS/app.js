@@ -3,19 +3,49 @@
 const menuBtn = document.querySelector('.mobile__menu-btn')
 const showNav = document.querySelector('.mobile__nav')
 const faqs = Array.from(document.querySelectorAll('.faq__accordion'))
+//const faqs = document.querySelector('.faq')
 
 // Toggle mobile-nav
 menuBtn.addEventListener('click', event => {
     showNav.classList.toggle('is-open')
 } )
 
-//Toggle Faqs
-faqs.forEach(faq => {
-    const faqbtn = faq.querySelector('.faq__accordion-title')
-    faq.addEventListener('click', event => {
-       faq.classList.toggle('faq__is-open')
+//dropdown menu toggle
+document.addEventListener('click', event => {
+    const isDropdownButton = event.target.matches('[data-dropdown-button')
+    if(!isDropdownButton && event.target.closest("[data-dropdown") != null) return
+    
+    let currentDropdown
+    if (isDropdownButton){
+        currentDropdown= event.target.closest("[data-dropdown]")
+        currentDropdown.classList.toggle('active')
+    }
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if(dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
     })
 })
+
+
+//Toggle Faqs
+
+//faqs.addEventListener('click', event => {
+    //console.log(event.target)
+    //const faqHeader = event.target.closest('.faq__accordion-header')
+    //if (faqHeader) {
+     //   const faq = faqHeader.parentElement
+     //   faq.classList.toggle('faq__is-open')
+    //}
+//})
+
+faqs.forEach(faq => {
+    const faqbtn = faq.querySelector('.faq__accordion-title')
+    faqbtn.addEventListener('click', event => {
+            faq.classList.toggle('faq__is-open')
+         
+    })
+})
+
 
 //function to handle carousel
 function   handleCarouselBtns() {

@@ -30,14 +30,17 @@
                 <ul class="mobile__nav-link">
                     <li><a href="#">Home</a></li>
                     <li><a href="./pages/about.html">About</a></li>
-                    <li class="mobile__dropdown">Properties
-                        <i class='bx bx-chevron-down bx-sm'></i>
-                        <div class="mobile__dropdown-menu">
-                            <a href="./pages/property.html">Gallery</a>
-                            <a href="">Agents</a>
-                            <a href="">My Profile</a>
-                            <a href="pages/faq.html">Faqs</a>        
-                        </div>
+                    <li class="mobile__dropdown">
+                        <a href="#">Properties
+                            <i class='bx bx-chevron-down bx-sm'></i>
+                            <div class="mobile__dropdown-menu">
+                               <a href="./pages/property.html">Gallery</a>
+                               <a href="./pages/agents.html">Agents</a>
+                               <a href="">My Profile</a>
+                                <a href="pages/faq.html">Faqs</a>        
+                            </div>
+                        </a>
+                        
                     </li>
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
@@ -50,16 +53,16 @@
                     <ul class="main__nav-link">
                         <li class="nav-rule"><a href="#">Home</a></li>
                         <li class="nav-rule"><a href="./pages/about.html">About</a></li>
-                        <li class="main__dropdown nav-rule">Properties
-                            <i class='bx bx-chevron-down'></i> 
-                            <div class="main__dropdown-menu">
-                                <div class="bubble">
-                                    <a href="./pages/property.html">Gallery</a>
-                                    <a href="">Agents</a>   
-                                    <a href="pages/faq.html">Faqs</a>  
-                                </div>   
-                            </div>
-                        </li>
+                        <li class="main__dropdown nav-rule" data-dropdown> 
+                            <button class="link" data-dropdown-button>Properties <i class='bx bx-chevron-down'></i></button> 
+                                <div class="main__dropdown-menu">
+                                    <div class="bubble">
+                                        <a href="./pages/property.html">Gallery</a>
+                                        <a href="./pages/agents.html">Agents</a>   
+                                        <a href="pages/faq.html">Faqs</a>  
+                                    </div>   
+                                </div>    
+                            </li>
                         <li class="nav-rule"><a href="./pages/contact.html">Contact</a></li>
                         <li class="nav-rule"><a href="#">My Account</a></li>
                     </ul>
@@ -80,32 +83,32 @@
                                 <h2>Apartment 200CA Flat</h2>
                                 <p class="property-price">$ 2000  
                                     <span class="highlight"> / month</span>  
-                                    <span class="rent-banner">For Rent</span>  
-                                </p>
-                                <p>
-                                    <span><i class='bx bx-map'></i></span>
-                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                    <span class="rent-banner">For Rent</span> 
+                                    <span class="address">
+                                        <i class='bx bx-map'></i>
+                                        Flat 200CA Emerald Apartment Homes, Abuja NG. 
+                                    </span>
                                 </p>
                             </div>
                             <div class="carousel__slide-details">
                                 <div class="property__details">
-                                    <i class='bx bx-area box-md'></i>
+                                    <i class='bx bx-area bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>500 SqFt</p>
+                                        <p class="bold">500 SqFt</p>
                                         <p>Size</p>
                                     </div>    
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-bed'></i>
+                                    <i class='bx bx-bed bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bedrooms</p>
                                     </div>
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-shower'></i>
+                                    <i class='bx bx-shower bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bathrooms</p>
                                     </div>
                                 </div>
@@ -119,32 +122,32 @@
                                 <h2>Apartment 200CA Flat</h2>
                                 <p class="property-price">$ 2000  
                                     <span class="highlight"> / month</span>  
-                                    <span class="rent-banner">For Rent</span>  
-                                </p>
-                                <p>
-                                    <span><i class='bx bx-map'></i></span>
-                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                    <span class="rent-banner">For Rent</span> 
+                                    <span class="address">
+                                        <i class='bx bx-map'></i>
+                                        Flat 200CA Emerald Apartment Homes, Abuja NG. 
+                                    </span>
                                 </p>
                             </div>
                             <div class="carousel__slide-details">
                                 <div class="property__details">
-                                    <i class='bx bx-area bx-md'></i>
+                                    <i class='bx bx-area bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>500 SqFt</p>
+                                        <p class="bold">500 SqFt</p>
                                         <p>Size</p>
                                     </div>    
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-bed bx-md'></i>
+                                    <i class='bx bx-bed bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bedrooms</p>
                                     </div>
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-shower bx-md'></i>
+                                    <i class='bx bx-shower bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bathrooms</p>
                                     </div>
                                 </div>
@@ -158,32 +161,32 @@
                                 <h2>Apartment 200CA Flat</h2>
                                 <p class="property-price">$ 2000  
                                     <span class="highlight"> / month</span>  
-                                    <span class="rent-banner">For Rent</span>  
-                                </p>
-                                <p>
-                                    <span><i class='bx bx-map'></i></span>
-                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                    <span class="rent-banner">For Rent</span> 
+                                    <span class="address">
+                                        <i class='bx bx-map'></i>
+                                        Flat 200CA Emerald Apartment Homes, Abuja NG. 
+                                    </span>
                                 </p>
                             </div>
                             <div class="carousel__slide-details">
                                 <div class="property__details">
-                                    <i class='bx bx-area'></i>
+                                    <i class='bx bx-area bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>500 SqFt</p>
+                                        <p class="bold">500 SqFt</p>
                                         <p>Size</p>
                                     </div>    
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-bed'></i>
+                                    <i class='bx bx-bed bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bedrooms</p>
                                     </div>
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-shower'></i>
+                                    <i class='bx bx-shower bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bathrooms</p>
                                     </div>
                                 </div>
@@ -197,32 +200,32 @@
                                 <h2>Apartment 200CA Flat</h2>
                                 <p class="property-price">$ 2000  
                                     <span class="highlight"> / month</span>  
-                                    <span class="rent-banner">For Rent</span>  
-                                </p>
-                                <p>
-                                    <span><i class='bx bx-map'></i></span>
-                                    Flat 200CA Emerald Apartment Homes, Abuja NG.
+                                    <span class="rent-banner">For Rent</span> 
+                                    <span class="address">
+                                        <i class='bx bx-map'></i>
+                                        Flat 200CA Emerald Apartment Homes, Abuja NG. 
+                                    </span>
                                 </p>
                             </div>
                             <div class="carousel__slide-details">
                                 <div class="property__details">
-                                    <i class='bx bx-area'></i>
+                                    <i class='bx bx-area bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>500 SqFt</p>
+                                        <p class="bold">500 SqFt</p>
                                         <p>Size</p>
                                     </div>    
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-bed'></i>
+                                    <i class='bx bx-bed bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bedrooms</p>
                                     </div>
                                 </div>
                                 <div class="property__details">
-                                    <i class='bx bx-shower'></i>
+                                    <i class='bx bx-shower bx-lg'></i>
                                     <div class="property__content-info">
-                                        <p>2</p>
+                                        <p class="bold">2</p>
                                         <p>Bathrooms</p>
                                     </div>
                                 </div>
@@ -232,10 +235,10 @@
                 </ul>
                 <div class="carousel__btns">
                     <button class="previous-btn">
-                        <i class='bx bx-chevron-left'></i>  
+                        <i class='bx bx-chevron-left bx-sm highlight'></i>  
                     </button>
                     <button class="next-btn">
-                        <i class='bx bx-chevron-right'></i>  
+                        <i class='bx bx-chevron-right bx-sm'></i>  
                     </button>
                 </div>
         </section>
