@@ -395,9 +395,14 @@ position: relative;
     color: #fff;
 }
 /*** about page styling **/
+.about__form {
+    height:  500px;
+    padding: 30px 20px;
+    width: 100%
+   }
 .form__image {
     position: relative;
-    width: 600px;
+    width: 100%;
 }
 .image__overlay {
     position: absolute;
@@ -439,25 +444,61 @@ position: relative;
     color: #222;
     font-weight: 600;
 }
-.about__form {
- height:  500px;
- padding: 30px 20px;
-}
+
 .about__info {
-    padding: 50px 40px 0;
+    padding: 50px 30px 0;
+    width: 100%;
 }
-.about__info img {
-    flex-basis: 50%;
-    width: 500px;
+.about_us_image{
+    width:100%;
+    height: 500px;
 }
-.about__text{
-    flex-basis: 50%;   
+.about_us_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
+
 
 .about__form form{
     margin: 20px 0;
 
 } 
+
+/** Contact Page Styles **/
+.contact__location {
+    padding: 50px 20px ;
+}
+.contact__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contact__details p {
+  font-size: 14px;
+}
+.contact__icon {
+    width: 80px; 
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__icon:hover {
+    background-color: var(--pink-050);
+}
+.contact__text {
+    padding-left: 15px;
+}
+.contact__form {
+    padding: 0 20px;
+}
+
 input.about__contact-form, textarea.about__contact-form {
   width: 100%;
 }
@@ -472,6 +513,11 @@ textarea.about__contact-form {
 .underline {
     padding-bottom: 30px;
 }
+
+
+
+
+
 /** PROPERTY PAGE STYLES **/
 .property__description {
     background-color: var(--white-grey-50);
@@ -900,12 +946,7 @@ textarea.about__contact-form {
       display: block;
       height: 300px;
     }
-    
-    
-    
-    
-    
-    
+     
 
     /** faq section style **/
     .faq {
@@ -917,6 +958,17 @@ textarea.about__contact-form {
 
 
 /*** about section **/
+   .about__info{
+    display: flex;
+    height: 800px;
+    }
+    .about__text { 
+       flex-basis: 50%; 
+    }
+    .about_us_image {
+        flex-basis: 50%;
+        height: 100%;
+    }
     .metrics {
         padding: 70px 50px;
         display: flex;
@@ -935,16 +987,20 @@ textarea.about__contact-form {
     .about__form {
        display: flex;
        justify-content: space-between;
+       height: 600px;
     }
-    .about__form img{
+    .form__image{
         flex-basis: 50%;
     }
     .about__form-content {
         flex-basis: 50%;
         padding-left: 40px;
     }
-    .about__info{
-        display: flex;
+    
+    /** Contact page Style **/
+
+    .email__margin {
+        margin-inline: 15px;
     }
    /**PROPERTY PAGE STYLE **/ 
 
