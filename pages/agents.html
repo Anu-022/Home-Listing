@@ -5,22 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agents</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <header>
+        <nav>
+            <!---mobile navigation menu -->
+            <div class="mobile__nav">
+                <div class="mobile__nav-content">
+                    <button class="mobile__menu-btn">
+                        <i class='bx bx-menu bx-sm' id="menu-btn"></i>
+                        <i class='bx bx-x bx-sm' id="close-btn"></i>
+                    </button>
+                    <h2>
+                        <span class="highlight">Rikka</span>Homes
+                    </h2>
+                    <button>
+                        <i class='bx bx-search-alt-2 bx-sm'></i>
+                    </button>
+                    <button>
+                        <i class='bx bxs-user bx-sm highlight'></i>
+                    </button>
+                </div>
+                <ul class="mobile__nav-link">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="mobile__dropdown">
+                        <a href="#">Properties
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="mobile__dropdown-menu">
+                               <a href="./property.html">Gallery</a>
+                               <a href="#">Agents</a>
+                               <a href="">My Profile</a>
+                                <a href="./faq.html">Faqs</a>        
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--- desktop navigation menu--->
+            <div class="main__nav">
+                <div class="main__nav-content">
+                    <h2>
+                        <span class="highlight">Rikka</span> Homes</h2>
+                    <ul class="main__nav-link">
+                        <li class="nav-rule"><a href="../index.html">Home</a></li>
+                        <li class="nav-rule"><a href="./about.html">About</a></li>
+                        <li class="main__dropdown nav-rule" data-dropdown> 
+                            <button class="link" data-dropdown-button>Properties <i class='bx bx-chevron-down'></i></button> 
+                                <div class="main__dropdown-menu">
+                                    <div class="bubble">
+                                        <a href="./property.html">Gallery</a>
+                                        <a href="#">Agents</a>   
+                                        <a href="./faq.html">Faqs</a>  
+                                    </div>   
+                                </div>    
+                            </li>
+                        <li class="nav-rule"><a href="./contact.html">Contact</a></li>
+                        <li class="nav-rule"><a href="#">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="main__nav-skewed">
+                    <i class='bx bxs-phone bx-flip-horizontal bx-lg'></i>
+                    <p>0915000000</p>
+                </div>
+            </div>    
+        </nav>
     <div class="hero">
         <img  class="hero__image" src="../assets/interior1.jpg" alt="header-img">
         <div class="hero__overlay">
             <h2>Agents</h2>
             <h5>
+                <i class='bx bxs-home highlight'></i>
                 <strong>HOME</strong>
-                <span> <i class='bx bx-chevron-right'></i>
+                <span><i class='bx bx-chevron-right'></i>
                      AGENTS</span>
             </h5>
         </div>
     </div>
     <section class="wrapper">
-        <p class="top-arrow">WE HAVE PROFESSIONAL AGENTS</p>
-        <h2 class="underline">MEET OUR AGENTS</h2>
+        <p class="top-arrow space">WE HAVE PROFESSIONAL AGENTS</p>
+        <h2 class="underline space">MEET OUR AGENTS</h2>
         <div class="agents">
             <div class="agent__list">
                 <div class="agent__img">
@@ -29,24 +96,24 @@
                 <div class="agent__text">
                     <h3>Sam Smith</h4>
                     <h4>4 Properties</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
-                </div>
-                <div class="agent__social-icons">
-                    <ul>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-facebook'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-twitter'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-instagram'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-linkedin'></i>
-                        </a></li>
-                    </ul>
-                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p> 
+                    <div class="agent__social-icons">
+                        <ul>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-facebook'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-instagram'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-linkedin'></i>
+                            </a></li>
+                        </ul>
+                    </div>  
+                </div>    
             </div>
             <div class="agent__list">
                 <div class="agent__img">
@@ -56,22 +123,22 @@
                     <h3>Sam Smith</h4>
                     <h4>4 Properties</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
-                </div>
-                <div class="agent__social-icons">
-                    <ul>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-facebook'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-twitter'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-instagram'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-linkedin'></i>
-                        </a></li>
-                    </ul>
+                    <div class="agent__social-icons">
+                        <ul>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-facebook'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-instagram'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-linkedin'></i>
+                            </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="agent__list">
@@ -82,48 +149,22 @@
                     <h3>Sam Smith</h4>
                     <h4>4 Properties</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
-                </div>
-                <div class="agent__social-icons">
-                    <ul>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-facebook'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-twitter'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-instagram'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-linkedin'></i>
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="agent__list">
-                <div class="agent__img">
-                    <img src="../assets/IMG_1365.JPG" alt="sam-smith">  
-                </div>
-                <div class="agent__text">
-                    <h3>Sam Smith</h4>
-                    <h4>4 Properties</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
-                </div>
-              <div class="agent__social-icons">
-                    <ul>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-facebook'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-twitter'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-instagram'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-linkedin'></i>
-                        </a></li>
-                    </ul>
+                    <div class="agent__social-icons">
+                        <ul>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-facebook'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-instagram'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-linkedin'></i>
+                            </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="agent__list">
@@ -134,26 +175,155 @@
                     <h3>Sam Smith</h4>
                     <h4>4 Properties</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
+                    <div class="agent__social-icons">
+                        <ul>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-facebook'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-instagram'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-linkedin'></i>
+                            </a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="agent__social-icons">
-                    <ul>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-facebook'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-twitter'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-instagram'></i>
-                        </a></li>
-                        <li><a href="#" class="highlight">
-                            <i class='bx bxl-linkedin'></i>
-                        </a></li>
-                    </ul>
+            </div>
+            <div class="agent__list">
+                <div class="agent__img">
+                    <img src="../assets/IMG_1365.JPG" alt="sam-smith">  
+                </div>
+                <div class="agent__text">
+                    <h3>Sam Smith</h4>
+                    <h4>4 Properties</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium totam officiis, sed doloribus autem doloremque iste fuga aliquam aperiam iusto dolorem magni cum deserunt, temporibus ullam eaque enim corrupti libero tempora mollitia! Accusamus laborum, dolore inventore possimus quos cum!</p>
+                    <div class="agent__social-icons">
+                        <ul>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-facebook'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-instagram'></i>
+                            </a></li>
+                            <li><a href="#" class="highlight">
+                                <i class='bx bxl-linkedin'></i>
+                            </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-----------footer------>
+    <footer>
+        <section class="footer__form">
+            <div class="newsletter">
+                    <h2>OUR
+                            <br>NEWSLETTER
+                    </h2>
+            </div>
+            <div class="newsletter__form">
+                <form action="">
+                    <div class="newsletter__input">
+                        <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS">
+                        <button><i class='bx bx-paper-plane bx-md'></i></button>
+                    </div>   
+                </form>       
+           </section>
+           <section class="footer__info">
+                <div class="footer__details">
+                    <h2>
+                        <span class="highlight">Rikka</span>
+                         Homes
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga esse ipsam amet quibusdam omnis quae magni, Illum ipsam eaque doloremque</p>
+                    <ul class="footer__social-icons">
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-facebook'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-twitter'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-instagram'></i>
+                        </a></li>
+                        <li><a href="#" class="highlight">
+                            <i class='bx bxl-linkedin'></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class='bx bxl-skype'></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__link-contact">
+                        <h2>Get in touch</h2>
+                        <p>
+                            <span><i class='bx bx-map highlight'></i></span>
+                            Plot 900, Room 5 Jericho Malls, Jobi Apartment Towers,
+                            Garki Abuja Nigeria.
+                        </p>
+                        <p>
+                            <span><i class='bx bxs-phone highlight'></i></span>
+                            (+234) 90000000
+                        </p>
+                        <p>
+                            <span><i class='bx bx-envelope highlight'></i></span>
+                            info@rikkahomes.com
+                        </p>
+                        <p>
+                            <span><i class='bx bx-globe highlight'></i></span>
+                            www.rikkahomes.com
+                        </p>
+                        <p>
+                            <span><i class='bx bxl-facebook highlight'></i></span>
+                            @rikka_estates</p>
+                    </div>
+                    
+                    <div class="footer__cities">
+                        <h2>Property Cites</h2>
+                        <ul>
+                            <li><span>
+                                <i class='bx bx-caret-right highlight'></i>
+                                </span>
+                                Lagos
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bx-caret-right highlight'></i>
+                                 </span>
+                                Abuja
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bx-caret-right highlight'></i>
+                                 </span>
+                                Portharcourt
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bx-caret-right highlight'></i>
+                                 </span> 
+                                Kano
+                            </li>
+                            <li>
+                                <span>
+                                    <i class='bx bx-caret-right highlight'></i>
+                                 </span>
+                                Ogun
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </section>
+      </footer>
     <script src="../JS/app.js"></script>
 </body>
 </html>

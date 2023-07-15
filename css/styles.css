@@ -29,7 +29,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color:#444; 
     overflow-x: hidden;
-    line-height: 1.8; 
 
 }
 
@@ -143,12 +142,31 @@ a {
     padding-top: 40px;
     z-index: 100;
 }
+.mobile__nav button {
+    border: none;
+}
+
+#close-btn {
+    display: none;
+}
+.mobile__dropdown-menu {
+    display: none;
+}
+.toggle__dropdown {
+    display: block;
+}
 .is-open .mobile__nav-link, .is-open .mobile__nav-content {
   transform: translate(300px);
 }
 .is-open .mobile__nav {
     overflow: hidden;
     width: 100vw;
+}
+.is-open #menu-btn {
+    display: none;
+}
+.is-open #close-btn {
+    display: inline;
 }
 .mobile__nav-link li +li {
     border-top: 1px solid var(--light-grey-100);
@@ -177,7 +195,7 @@ a {
 /** Home Page carousel section style **/
 .carousel {
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 .carousel__contents{
     display: flex;
@@ -208,7 +226,11 @@ a {
 }
 .carousel__slide-details {
     background-color:var(--light-grey-100);
-    padding: 8px 10px;
+    padding: 15px 10px;
+    width: 100%;   
+    display: flex;
+    justify-content: space-between;
+        
 }
 .carousel__btns {
     display: none;
@@ -395,14 +417,20 @@ position: relative;
     color: #fff;
 }
 /*** about page styling **/
+
+.about {
+    line-height: 1.8;
+    padding-bottom: 50px;
+}
+
 .about__form {
-    height:  500px;
     padding: 30px 20px;
     width: 100%
    }
 .form__image {
     position: relative;
-    width: 100%;
+    width: 100%; 
+    height: 500px;
 }
 .image__overlay {
     position: absolute;
@@ -417,6 +445,10 @@ position: relative;
     height: 100%;
     width: 100%;
    
+}
+.about__form-content {
+    height: 500px;
+    margin-bottom: 50px;
 }
 .about__text {
     padding: 30px 20px;
@@ -467,6 +499,12 @@ position: relative;
 } 
 
 /** Contact Page Styles **/
+.desktop {
+    display: none;
+}
+.contact {
+    line-height: 1.8;
+}
 .contact__location {
     padding: 50px 20px ;
 }
@@ -476,6 +514,41 @@ position: relative;
     align-items: center;
     padding: 20px 0;
 }
+.branch {
+    width: 100%;
+    background-color: var(--blue-grey-100);
+    
+}
+
+.branch__header {
+    width: 100%; 
+    height: 40px;
+    margin: 5px 0;
+}
+.branch__header button {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: var(--light-grey-050);
+    font-size: 16px;
+}
+.branch__header button:hover {
+    background-color: var(--pink-050);
+}
+.branch__address {
+    font-size: 14px;
+    padding: 15px;
+    display: none;
+    background-color: var(--light-grey-050);
+}
+.branch.is-selected {
+    background-color:var(--pink-050) ;
+}
+.branch.is-selected .branch__address{
+    display: block;
+}
 
 .contact__details p {
   font-size: 14px;
@@ -483,7 +556,8 @@ position: relative;
 .contact__icon {
     width: 80px; 
     height: 80px;
-    background-color: #ddd;
+    background-color: var(--blue-grey-100);
+    color: #ddd;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -512,6 +586,17 @@ textarea.about__contact-form {
 }
 .underline {
     padding-bottom: 30px;
+}
+
+.contact__btn {
+    background-color: var(--blue-grey-050);
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: var(--light-grey-050);
+    display: block;
+    margin: 30px auto;
+    font-size: 16px;
 }
 
 
@@ -589,6 +674,12 @@ textarea.about__contact-form {
 .featured__text p {
     font-size: 15px;
     padding-top: 5px;
+}
+.space {
+    padding-left: 20px;
+}
+.text__color {
+    color: #fff;
 }
 /*** FOOTER STYLES **/
 
@@ -670,6 +761,7 @@ textarea.about__contact-form {
 
 .agents {
     width: 100%;
+    line-height: 1.8;
 }
 .agent__list {
     padding: 60px 20px;
@@ -695,6 +787,15 @@ textarea.about__contact-form {
 }
 .agent__text h4 {
     color: #ddd;
+}
+.agent__social-icons {
+    margin-top: 30px;
+}
+.agent__social-icons ul {
+ display: flex;
+ width: 100px;
+ margin: 0 auto;
+ justify-content: space-between;
 }
 
 
@@ -998,10 +1099,73 @@ textarea.about__contact-form {
     }
     
     /** Contact page Style **/
-
+    .contact__location {
+        display: flex;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .head__office {
+        flex-basis: 50%;
+    }
+    .branch__list {
+        flex-basis: 50%;
+    }
+    .desktop__branch {
+        display: flex;
+        height: 300px;
+        padding-top: 30px;
+    }
+    
+    .branch__address {
+        flex-basis: 70%;
+        height: 300px;
+    }
     .email__margin {
         margin-inline: 15px;
     }
+    .desktop__branch-list {
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         justify-content: space-between;
+         margin-left: 30px;
+    }
+    .branch__btn {
+        width: 150px; 
+        height: 50px;
+        background-color: var(--blue-grey-100);
+    }
+    .branch__btn button {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        color: var(--light-grey-050);
+        font-size: 16px;
+    }
+    .desktop__branch-location {
+        font-size: 14px;
+        padding: 15px;
+        background-color: var(--light-grey-050);
+        height: 100%;
+        display: none;    
+    }
+    .desktop__branch-location span {
+        padding-right: 10px;
+    }
+    .branch__btn.is-selected {
+        background-color: var(--pink-050);
+    }
+    .desktop__branch-location.is-selected {
+        display: block;
+    }
+
+
    /**PROPERTY PAGE STYLE **/ 
 
    .property__description {
@@ -1025,7 +1189,7 @@ textarea.about__contact-form {
     height: 200px;
    }
    .featured {
-    width: 500px;
+    width: 600px;
    } 
    .featured__img-card {
     display: flex;
@@ -1035,7 +1199,14 @@ textarea.about__contact-form {
     height: 200px;
     padding-left: 15px;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.featured__text p {
+    padding-top: 2px;
+}
+.featured__text h3{
+    padding: 0;
 }
 .wrapper {
     padding: 0 100px;
@@ -1106,7 +1277,8 @@ textarea.about__contact-form {
     border-bottom: 1px solid var(--light-grey-150);
 }
 .agent__img { 
-   height: 350px;
+   height: 400px;
+   flex: 1;
 }
 .agent__img img {
     width: 100%;
@@ -1116,6 +1288,7 @@ textarea.about__contact-form {
 
 }
 .agent__text {
+    flex: 2;
     text-align: left;
     padding-top: 40px;
     padding-left: 20px;
@@ -1127,6 +1300,9 @@ textarea.about__contact-form {
 .agent__text p {
     padding-top: 30px;
 }
+.agent__social-icons ul {
+    margin-left: 30px;
+   }
 
 
 

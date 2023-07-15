@@ -5,11 +5,21 @@ const showNav = document.querySelector('.mobile__nav')
 const faqs = Array.from(document.querySelectorAll('.faq__accordion'))
 //const faqs = document.querySelector('.faq')
 
+// Mobile Navigation functionality
 // Toggle mobile-nav
 menuBtn.addEventListener('click', event => {
     showNav.classList.toggle('is-open')
 } )
 
+//Toggle mobile dropdown
+const showDropdown = document.querySelector('.mobile__dropdown')
+const mobileDropdown = showDropdown.querySelector('.mobile__dropdown-menu')
+showDropdown.addEventListener('click', event => {
+    mobileDropdown.classList.toggle('toggle__dropdown')
+})
+
+
+//Desktop Menu Navigation
 //dropdown menu toggle
 document.addEventListener('click', event => {
     const isDropdownButton = event.target.matches('[data-dropdown-button')
@@ -26,7 +36,7 @@ document.addEventListener('click', event => {
     })
 })
 
-
+// FAQ page functionality
 //Toggle Faqs
 
 //faqs.addEventListener('click', event => {
@@ -46,7 +56,7 @@ faqs.forEach(faq => {
     })
 })
 
-
+//Home page functionality
 //function to handle carousel
 function   handleCarouselBtns() {
     const carousel = document.querySelector('.carousel')
@@ -82,8 +92,8 @@ function   handleCarouselBtns() {
 
 function handleSlideshow() {
   const carousel = document.querySelector('.carousel')
-   const slider = carousel.querySelector('.carousel__contents')
-   const slides = Array.from(slider.querySelectorAll('.carousel__slide'))
+   const slider = document.querySelector('.carousel__contents')
+   const slides = Array.from(document.querySelectorAll('.carousel__slide'))
 
     const slideCount = slides.length
     let activeSlide = 0
@@ -103,8 +113,53 @@ function handleSlideshow() {
 
 }
 
+//Contact Page functionality
+// Toggle mobile Branch accordion
+    const branches = Array.from(document.querySelectorAll('.branch'))
+    branches.forEach((branch) => {
+        branch.addEventListener('click', event => {
+            branches.forEach(b => {
+                b.classList.remove('is-selected')
+            })
+        branch.classList.add('is-selected')
+        } )
+    })
+
+// Toggle Desktop Branch accordion
+const branchList = document.querySelector('.desktop__branch')
+const branchAddress = Array.from(document.querySelectorAll('.desktop__branch-location'))
+const branchBtns = Array.from(document.querySelectorAll('.branch__btn'))
+branchBtns.forEach(btn => {
+    btn.addEventListener('click', event => {
+        const target = btn.dataset.target
+        const content = branchList.querySelector('#' + target)
+        branchBtns.forEach(b => b.classList.remove('is-selected'))
+        btn.classList.add('is-selected')
+        branchAddress.forEach(list => list.classList.remove('is-selected'))
+        content.classList.add('is-selected')
+    })
+})
+
+//About Page Dynamic Counter
+
+const counter = document.querySelectorAll('.metric-numbers')
+const inc = []
+function incrementCounter() {
+    for(let i=0; i< counter.length; i++) {
+        inc.push(1)
+        if(inc[i] != counter[i].getAttribute('data-max')) {
+           inc[i]++;
+        }
+        console.log(inc) 
+        counter[i].innerHTML = inc[i]   
+    }
+           
+}
+
 handleSlideshow();
 handleCarouselBtns();
+setInterval(incrementCounter, 10)
+
 
 
 

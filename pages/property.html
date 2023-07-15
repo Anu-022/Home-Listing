@@ -14,7 +14,8 @@
             <div class="mobile__nav">
                 <div class="mobile__nav-content">
                     <button class="mobile__menu-btn">
-                        <i class='bx bx-menu bx-sm'></i>
+                        <i class='bx bx-menu bx-sm' id="menu-btn"></i>
+                        <i class='bx bx-x bx-sm' id="close-btn"></i>
                     </button>
                     <h2>
                         <span class="highlight">Rikka</span>Homes
@@ -23,22 +24,25 @@
                         <i class='bx bx-search-alt-2 bx-sm'></i>
                     </button>
                     <button>
-                        <i class='bx bxs-user bx-sm'></i>
+                        <i class='bx bxs-user bx-sm highlight'></i>
                     </button>
                 </div>
                 <ul class="mobile__nav-link">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
-                    <li class="mobile__dropdown">Properties
-                        <i class='bx bx-chevron-down bx-sm'></i>
-                        <div class="mobile__dropdown-menu">
-                            <a href="#">Gallery</a>
-                            <a href="">Agents</a>
-                            <a href="">My Profile</a>
-                            <a href="faq.html">Faqs</a>        
-                        </div>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="mobile__dropdown">
+                        <a href="#">Properties
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="mobile__dropdown-menu">
+                               <a href="#">Gallery</a>
+                               <a href="./agents.html">Agents</a>
+                               <a href="">My Profile</a>
+                                <a href="./faq.html">Faqs</a>        
+                            </div>
+                        </a>
+                        
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
             <!--- desktop navigation menu--->
@@ -48,18 +52,18 @@
                         <span class="highlight">Rikka</span> Homes</h2>
                     <ul class="main__nav-link">
                         <li class="nav-rule"><a href="../index.html">Home</a></li>
-                        <li class="nav-rule"><a href="about.html">About</a></li>
-                        <li class="main__dropdown nav-rule">Properties
-                            <i class='bx bx-chevron-down'></i> 
-                            <div class="main__dropdown-menu">
-                                <div class="bubble">
-                                    <a href="#">Gallery</a>
-                                    <a href="">Agents</a>   
-                                    <a href="faq.html">Faqs</a>  
-                                </div>   
-                            </div>
-                        </li>
-                        <li class="nav-rule"><a href="contact.html">Contact</a></li>
+                        <li class="nav-rule"><a href="./about.html">About</a></li>
+                        <li class="main__dropdown nav-rule" data-dropdown> 
+                            <button class="link" data-dropdown-button>Properties <i class='bx bx-chevron-down'></i></button> 
+                                <div class="main__dropdown-menu">
+                                    <div class="bubble">
+                                        <a href="#">Gallery</a>
+                                        <a href="./agents.html">Agents</a>   
+                                        <a href="./faq.html">Faqs</a>  
+                                    </div>   
+                                </div>    
+                            </li>
+                        <li class="nav-rule"><a href="./contact.html">Contact</a></li>
                         <li class="nav-rule"><a href="#">My Account</a></li>
                     </ul>
                 </div>
@@ -69,13 +73,13 @@
                 </div>
             </div>    
         </nav>
-        </header>
         <section class="property">
             <div class="hero">
                 <img  class="hero__image" src="../assets/interior1.jpg" alt="header-img">
                 <div class="hero__overlay">
                     <h2>List of Properties</h2>
                     <h5>
+                        <i class='bx bxs-home highlight'></i>
                         <strong>PROPERTIES</strong>
                         <span> <i class='bx bx-chevron-right'></i>
                              GALLERY</span>
@@ -83,8 +87,8 @@
                 </div>
             </div>
             <section class="property__list">
-                <p class="top-arrow">BROWSE YOUR DREAM HOUSE</p>
-                <h2 class="underline">FIND A PROPERTY</h2>
+                <p class="top-arrow space">BROWSE YOUR DREAM HOUSE</p>
+                <h2 class="underline space">FIND A PROPERTY</h2>
                 <div class="wrapper">
                     <div class="property__description">
                         <div class="property__img">
@@ -229,8 +233,8 @@
                 </div>
                     
                 <div class="featured__properties">
-                    <p class="top-arrow">BROWSE YOUR DREAM HOUSE</p>
-                    <h2 class="underline">FIND A PROPERTY</h2>
+                    <p class="top-arrow text__color">BROWSE YOUR DREAM HOUSE</p>
+                    <h2 class="underline text__color">FIND A PROPERTY</h2>
                     <div class="wrapper grid">
                         <div class="featured">
                             <div class="featured__img-card">
@@ -393,7 +397,7 @@
                             (+234) 90000000
                         </p>
                         <p>
-                            <span><i class='bx bx-envelop highlight'></i></span>
+                            <span><i class='bx bx-envelope highlight'></i></span>
                             info@rikkahomes.com
                         </p>
                         <p>
