@@ -155,10 +155,10 @@ function incrementCounter() {
     }
            
 }
-
+setInterval(incrementCounter, 100)
 handleSlideshow();
 handleCarouselBtns();
-setInterval(incrementCounter, 10)
+
 
 
 
